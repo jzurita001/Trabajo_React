@@ -1,11 +1,24 @@
 import React from 'react'
+import foto from '../../images/foto.jpg'
 
-const Card = () => {
+
+const Card = ({user}) => {
+    
+const {name,login,picture}= user
+    
+    console.log(user)
     return (
-        <div>
-            <h1>Cards</h1>
+
+        <div className="card" >                         
+                <img src={picture.large} className="card-img-top" alt={login.username}/>
+                <div className="card-body">
+                    <h5 className="card-title">{name.last}</h5>
+                    <a href="#" className="btn btn-success">Seguir</a>
+
+                </div>
+            
         </div>
+ 
     )
 }
-
 export default Card
