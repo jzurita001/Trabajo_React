@@ -1,14 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 import ListCards from './components/cards/ListCards'; 
-import navbar from './components/navbar/navbar';
+import Navbar from './components/navbar/navbar';
 
 function App() {
   return (
     <div className="App">
-      <navbar/>
+      <Navbar/>
       <ListCards/>
-    
+
     </div>
   );
 }
